@@ -23,26 +23,101 @@ class ViewController: UIViewController {
     @IBOutlet weak var listFourLabel: UITextField!
     @IBOutlet weak var listFiveLabel: UITextField!
     
+    var num1:Int = 0
+    var num2:Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        clearForm(self)
     }
 
     
 
-    @IBAction func incrementUp(sender: AnyObject) {
-        
+    @IBAction func incrementUp(sender: UIButton) {
+        switch sender.tag {
+        case 1:
+            num1 = Int(listOneCount.text!)!
+            num1 += 1
+            listOneCount.text = String(num1)
+            
+        case 2:
+            num1 = Int(listTwoCount.text!)!
+            num1 += 1
+            listTwoCount.text = String(num1)
+            
+        case 3:
+            num1 = Int(listThreeCount.text!)!
+            num1 += 1
+            listThreeCount.text = String(num1)
+            
+        case 4:
+            num1 = Int(listFourCount.text!)!
+            num1 += 1
+            listFourCount.text = String(num1)
+            
+        case 5:
+            num1 = Int(listFiveCount.text!)!
+            num1 += 1
+            listFiveCount.text = String(num1)
+            
+            
+        default:
+            print("default")
+        }
     }
 
     @IBAction func incrementDown(sender: AnyObject) {
+        
+        
+        switch sender.tag {
+        case 1:
+            num1 = Int(listOneCount.text!)!
+            if(num1 >= 1){
+                num1 -= 1
+                listOneCount.text = String(num1)
+            }
+            
+        case 2:
+            num1 = Int(listTwoCount.text!)!
+            if(num1 >= 1){
+            num1 -= 1
+            listTwoCount.text = String(num1)
+            }
+        case 3:
+            num1 = Int(listThreeCount.text!)!
+            if(num1 >= 1){
+            num1 -= 1
+            listThreeCount.text = String(num1)
+            }
+        case 4:
+            num1 = Int(listFourCount.text!)!
+            if(num1 >= 1){
+            num1 -= 1
+            listFourCount.text = String(num1)
+            }
+        case 5:
+            num1 = Int(listFiveCount.text!)!
+            if(num1 >= 1){
+            num1 -= 1
+            listFiveCount.text = String(num1)
+            }
+            
+        default:
+            print("default")
+        }
+
     }
     @IBAction func clearForm(sender: AnyObject) {
-        shoppingList.text = "Shopping List"
-        listOneLabel.text = "Enter List Item"
-        listTwoLabel.text = "Enter List Item"
-        listThreeLabel.text = "Enter List Item"
-        listFourLabel.text = "Enter List Item"
-        listFiveLabel.text = "Enter List Item"
+        shoppingList.placeholder = "Shopping List"
+        listOneLabel.placeholder = "Enter List Item"
+        listTwoLabel.placeholder = "Enter List Item"
+        listThreeLabel.placeholder = "Enter List Item"
+        listFourLabel.placeholder = "Enter List Item"
+        listFiveLabel.placeholder = "Enter List Item"
         
         listOneCount.text = "0"
         listTwoCount.text = "0"
