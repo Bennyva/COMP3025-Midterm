@@ -107,6 +107,9 @@
                                         <state key="normal" title="&lt;">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="incrementDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uj4-Ce-La1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ai2-S9-fLS">
                                         <rect key="frame" x="540" y="9" width="30" height="44"/>
@@ -115,6 +118,9 @@
                                         <state key="normal" title="&gt;">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="incrementUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yL6-fl-71Q"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Non-Fat Milk" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDS-AS-flB">
                                         <rect key="frame" x="52" y="9" width="383" height="44"/>
@@ -200,9 +206,12 @@
                                         <state key="normal" title="&gt;">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="incrementUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aaw-WH-eF2"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78A-Qg-hkg">
-                                        <rect key="frame" x="450" y="8" width="30" height="44"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78A-Qg-hkg">
+                                        <rect key="frame" x="450" y="7" width="30" height="44"/>
                                         <color key="backgroundColor" red="0.42772078590000001" green="0.43650669669999997" blue="0.4365592277" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="v1S-ud-K69"/>
@@ -211,6 +220,9 @@
                                         <state key="normal" title="&lt;">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="incrementDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DVL-S0-0R5"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Carton of Eggs" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="akb-IL-Kee">
                                         <rect key="frame" x="50" y="9" width="385" height="42"/>
@@ -264,6 +276,9 @@
                                         <state key="normal" title="&lt;">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="incrementDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yrp-1U-ebv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tx7-Wb-wOO">
                                         <rect key="frame" x="540" y="9" width="30" height="42"/>
@@ -275,6 +290,9 @@
                                         <state key="normal" title="&gt;">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="incrementUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="het-2m-3xM"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Whole Wheat Breat" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Tj-31-frA">
                                         <rect key="frame" x="50" y="9" width="383" height="42"/>
@@ -325,6 +343,9 @@
                                         <state key="normal" title="&lt;">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="incrementDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9CO-4I-gyK"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sw-GK-PSw">
                                         <rect key="frame" x="503" y="18" width="14" height="24"/>
@@ -342,6 +363,9 @@
                                         <state key="normal" title="&gt;">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="incrementUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SsS-U9-X4c"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Canned Tuna" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y0w-ld-MAT">
                                         <rect key="frame" x="50" y="9" width="385" height="42"/>
@@ -395,6 +419,9 @@
                                         <state key="normal" title="&lt;">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="incrementDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5N-6V-CbD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkh-ob-Drh">
                                         <rect key="frame" x="540" y="10" width="30" height="42"/>
@@ -406,6 +433,9 @@
                                         <state key="normal" title="&gt;">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="incrementUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWl-om-AxL"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Lemons" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LbY-Dk-p38">
                                         <rect key="frame" x="50" y="10" width="383" height="42"/>
@@ -462,6 +492,9 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="clearForm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mA2-Ax-ajQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -537,6 +570,19 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="listFiveCount" destination="kAn-Ns-MF2" id="7xw-n3-4V0"/>
+                        <outlet property="listFiveLabel" destination="LbY-Dk-p38" id="9Ks-4Z-2HL"/>
+                        <outlet property="listFourCount" destination="7sw-GK-PSw" id="7cR-PH-nNc"/>
+                        <outlet property="listFourLabel" destination="y0w-ld-MAT" id="lKm-xF-FF7"/>
+                        <outlet property="listOneCount" destination="aRO-CK-Qyw" id="y9Y-jt-0FC"/>
+                        <outlet property="listOneLabel" destination="PDS-AS-flB" id="kIm-7o-hr1"/>
+                        <outlet property="listThreeCount" destination="qEQ-zD-HF9" id="S0Y-Ds-6r6"/>
+                        <outlet property="listThreeLabel" destination="9Tj-31-frA" id="uqv-fn-vlW"/>
+                        <outlet property="listTwoCount" destination="TNh-on-zfD" id="9hg-WW-iLo"/>
+                        <outlet property="listTwoLabel" destination="akb-IL-Kee" id="oCi-st-pF3"/>
+                        <outlet property="shoppingList" destination="SrF-u5-nLc" id="heh-0L-yUS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
