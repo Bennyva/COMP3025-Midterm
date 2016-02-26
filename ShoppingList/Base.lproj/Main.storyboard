@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,9 +22,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJS-BN-tFx">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Create Shopping List" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrF-NR-tOQ">
-                                        <rect key="frame" x="285" y="19" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Shopping List" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrF-NR-tOQ">
+                                        <rect key="frame" x="156" y="20" width="289" height="35"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -36,15 +37,21 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1L3-Ek-xRh">
                                 <rect key="frame" x="0.0" y="120" width="600" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Shopping List" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SrF-u5-nLc">
+                                        <rect key="frame" x="48" y="15" width="312" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="312" id="A2G-2Z-ftj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EP-Li-eQh">
-                                <rect key="frame" x="0.0" y="240" width="600" height="60"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fec-n6-jqm">
-                                <rect key="frame" x="0.0" y="180" width="600" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="SrF-u5-nLc" firstAttribute="leading" secondItem="1L3-Ek-xRh" secondAttribute="leading" constant="48" id="4bG-vt-6Fh"/>
+                                    <constraint firstItem="SrF-u5-nLc" firstAttribute="centerY" secondItem="1L3-Ek-xRh" secondAttribute="centerY" id="URc-Yg-sSe"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eZ-2I-ufY">
                                 <rect key="frame" x="0.0" y="360" width="600" height="60"/>
@@ -69,18 +76,48 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xu3-lv-WJj">
                                 <rect key="frame" x="0.0" y="60" width="600" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter New List Name" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sL7-2Q-ZoN">
-                                        <rect key="frame" x="42" y="19" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter New List Name" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eb-4l-X0M">
+                                        <rect key="frame" x="50" y="25" width="170" height="10"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="sL7-2Q-ZoN" firstAttribute="top" secondItem="Xu3-lv-WJj" secondAttribute="top" constant="20" id="23L-8B-UbE"/>
-                                    <constraint firstItem="sL7-2Q-ZoN" firstAttribute="leading" secondItem="Xu3-lv-WJj" secondAttribute="leading" constant="50" id="ZXQ-D0-8fM"/>
+                                    <constraint firstItem="4eb-4l-X0M" firstAttribute="leading" secondItem="Xu3-lv-WJj" secondAttribute="leading" constant="50" id="b1r-ar-QRA"/>
+                                    <constraint firstAttribute="bottom" secondItem="4eb-4l-X0M" secondAttribute="bottom" constant="25" id="dbz-r7-2NV"/>
+                                    <constraint firstItem="4eb-4l-X0M" firstAttribute="top" secondItem="Xu3-lv-WJj" secondAttribute="top" constant="25" id="nih-3q-LxL"/>
                                 </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fec-n6-jqm">
+                                <rect key="frame" x="0.0" y="180" width="600" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter New List Item" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oe-ss-Dcf">
+                                        <rect key="frame" x="50" y="25" width="158" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5oe-ss-Dcf" secondAttribute="height" multiplier="85:11" id="UPo-QV-n4p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="UPo-QV-n4p"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5oe-ss-Dcf" firstAttribute="leading" secondItem="fec-n6-jqm" secondAttribute="leading" constant="50" id="3aO-5n-v0I"/>
+                                    <constraint firstItem="5oe-ss-Dcf" firstAttribute="top" secondItem="fec-n6-jqm" secondAttribute="top" constant="25" id="nDr-CF-W8f"/>
+                                    <constraint firstAttribute="bottom" secondItem="5oe-ss-Dcf" secondAttribute="bottom" constant="25" id="yiX-Jl-6Lg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EP-Li-eQh">
+                                <rect key="frame" x="0.0" y="240" width="600" height="60"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
